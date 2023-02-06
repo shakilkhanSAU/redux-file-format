@@ -71,3 +71,17 @@ export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
 ### 4. create an actionCreators folder
 create an actionCreators folder where you can define what action to do and the logic of the action object that mainly get from a dispatch function as an object. so in the actionCreators here we create a `productAction.js` file
 
+```
+import { ADD_TO_CART } from "../actionTypes/actionTypes"
+
+export const addToCart = (product) => {
+    return {
+        type: ADD_TO_CART,
+        payload: product,
+    }
+}
+
+```
+
+
+
