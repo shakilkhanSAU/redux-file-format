@@ -80,8 +80,17 @@ export const addToCart = (product) => {
         payload: product,
     }
 }
-
 ```
+use this `addToCart(product)` directly inside the dispatch function. 
+```
+        <button className='bg-indigo-500 rounded-full py-1 px-2 flex-1 text-white text-bold'
+          
+          onClick={() => { dispatch(addToCart(product)) }}
+        >
+          Add to cart
+        </button>
+ ```
+ 
 
 
 
