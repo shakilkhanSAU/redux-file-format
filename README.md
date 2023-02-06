@@ -87,7 +87,13 @@ use this `addToCart(product)` directly inside the dispatch function.
           Add to cart
         </button>
  ```
- 
+ to call dispatch function `useDispatch()` and import from react-redux
+ ```
+ import { useDispatch } from "react-redux";
+ const dispatch = useDispatch();
+ ```
+
+
 
 
 
