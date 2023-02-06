@@ -12,6 +12,8 @@ yarn add redux react-redux
 ```
 after installing you have to create a a folder called `redux` into the `src` folder, and into the `redux` folder create some folder and file according to the file format given to this ripo.
 
+
+
 ### Store
 ```
 import { createStore } from "redux";
@@ -21,7 +23,9 @@ const store = createStore(productReducer);
 export default store;
 ```
 
-#### create a reducer folder
+
+
+### create a reducer folder
 create a reducer folder in redux folder and create file named productReducer or any other name match to the activity of the reducer. here the name is `productReducer`, inside this file code example are give below,
 ```
 import { ADD_TO_CART, REMOVE_FROM_CART } from "../actionTypes/actionTypes";
@@ -49,3 +53,13 @@ const productReducer = (state = initialState, action) => {
 
 export default productReducer;
 ```
+
+
+### Define action types
+create a folder named `actionTypes` where you can define some action the can be executed or dispatch by the `dispatch()` function. 
+
+```
+export const ADD_TO_CART = "ADD_TO_CART";
+export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
+```
+
