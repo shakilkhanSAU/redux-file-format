@@ -21,4 +21,30 @@ const store = createStore(productReducer);
 export default store;
 ```
 
-### a reducer (create a folder and inside in a file called ____reducer (here porduct reducer)___ 
+### a reducer (create a folder and inside in a file called ** reducer (here porduct reducer)**
+```
+import { ADD_TO_CART, REMOVE_FROM_CART } from "../actionTypes/actionTypes";
+
+const initialState = {
+    cart: []
+};
+
+const productReducer = (state = initialState, action) => {
+    switch (action.type) {
+        case ADD_TO_CART:
+            return {
+                ...state,
+                cart: [...state.cart, action.payload]
+            }
+        case REMOVE_FROM_CART:
+            return {
+                ...state,
+                cart: [...state.cart, action.payload]
+            }
+        default:
+            return state;
+    }
+}
+
+export default productReducer;
+```
