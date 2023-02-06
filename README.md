@@ -21,7 +21,8 @@ const store = createStore(productReducer);
 export default store;
 ```
 
-### a reducer (create a folder and inside in a file called ** reducer (here porduct reducer)**
+#### create a reducer folder
+create a reducer folder in redux folder and create file named productReducer or any other name match to the activity of the reducer. here the name is `productReducer`, inside this file code example are give below,
 ```
 import { ADD_TO_CART, REMOVE_FROM_CART } from "../actionTypes/actionTypes";
 
