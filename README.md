@@ -93,7 +93,14 @@ use this `addToCart(product)` directly inside the dispatch function.
  const dispatch = useDispatch();
  ```
 
+### how to get the global state
+to get the global state you need to call it by the given example
+```
+import { useSelector } from "react-redux";
 
-
+const state = useSelector((state) => state);
+console.log(state);
+```
+so you are now ready to explore redux as a beginer. 
 
 
